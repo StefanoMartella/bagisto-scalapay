@@ -1,0 +1,50 @@
+{
+  "name": "stefanomartella/bagisto-scalapay",
+  "type": "package",
+  "description": "Scalapay payment gateway for Bagisto",
+  "keywords": [
+      "bagisto",
+      "payment",
+      "ecommerce",
+      "scalapay",
+      "opensource"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/StefanoMartella/bagisto-scalapay",
+  "minimum-stability": "dev",
+  "authors": [
+      {
+          "name": "Stefano Martella",
+          "email": "stefano.martella9614@gmail.com",
+          "homepage": "https://github.com/StefanoMartella/bagisto-scalapay",
+          "role": "Developer"
+      }
+  ],
+  "support": {
+      "source": "https://github.com/StefanoMartella/bagisto-scalapay",
+      "issues": "https://github.com/StefanoMartella/bagisto-scalapay/issues",
+      "email": "stefano.martella9614@gmail.com"
+  },
+  "require": {
+    "scalapay/scalapay-php-sdk": "^3.3"
+  },
+  "funding": [
+      {
+          "type": "github",
+          "url": "https://github.com/sponsors/StefanoMartella/waitlist"
+      }
+  ],
+  "autoload": {
+      "psr-4": {
+          "Webkul\\Scalapay\\": "src"
+      }
+  },
+  "extra": {
+      "laravel": {
+          "providers": [
+              "Webkul\\Scalapay\\Providers\\ScalapayServiceProvider"
+          ],
+          "aliases": {}
+      }
+  }
+}

@@ -1,0 +1,67 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "3b761c980cd78a36182ad5f7344f4320",
+    "packages": [
+        {
+            "name": "scalapay/scalapay-php-sdk",
+            "version": "3.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/scalapay/scalapay-php-sdk.git",
+                "reference": "2164bb61eb8ff4091c89c569722fe65253090ed9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/scalapay/scalapay-php-sdk/get/2164bb61eb8ff4091c89c569722fe65253090ed9.zip",
+                "reference": "2164bb61eb8ff4091c89c569722fe65253090ed9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Scalapay\\Sdk\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Scalapay",
+                    "email": "info@scalapay.com"
+                }
+            ],
+            "description": "Integrate easily with the scalapay.com API",
+            "homepage": "https://bitbucket.org/scalapay/scalapay-php-sdk",
+            "keywords": [
+                "payments",
+                "scalapay",
+                "shopping"
+            ],
+            "support": {
+                "issues": "https://bitbucket.org/scalapay/scalapay-php-sdk/issues",
+                "source": "https://bitbucket.org/scalapay/scalapay-php-sdk/src/2164bb61eb8ff4091c89c569722fe65253090ed9/?at=3.3.4"
+            },
+            "time": "2024-03-27T16:00:07+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
