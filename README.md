@@ -1,8 +1,8 @@
 <p align="center"><img src="src/Resources/assets/images/scalapay.svg" width="288"></p>
 
 # Scalapay Payment Gateway
-[![License](https://poser.pugx.org/StefanoMartella/bagisto-scalapay/license)](https://github.com/StefanoMartella/bagisto-scalapay/master/LICENSE)
-[![Total Downloads](https://poser.pugx.org/StefanoMartella/bagisto-scalapay/d/total)](StefanoMartella/bagisto-scalapay)
+[![License](https://badgen.net/github/license/StefanoMartella/bagisto-scalapay)](https://github.com/StefanoMartella/bagisto-scalapay/blob/master/LICENSE)
+[![Total Downloads](https://badgen.net/npm/dm/bagisto-scalapay)]([StefanoMartella/bagisto-scalapay](https://github.com/StefanoMartella/bagisto-scalapay))
 
 ## 1. Introduction:
 
