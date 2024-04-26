@@ -3,6 +3,7 @@
 namespace Webkul\Scalapay\Payment;
 
 use Illuminate\Support\Facades\Storage;
+use Webkul\Checkout\Facades\Cart;
 use Webkul\Payment\Payment\Payment;
 
 class Scalapay extends Payment
@@ -17,6 +18,11 @@ class Scalapay extends Payment
     public function getRedirectUrl(): string
     {
         return route('scalapay.process');
+    }
+
+    public function isAvailable()
+    {
+        return Cart::getCart()->grand_total >= 5;
     }
 
     /**
