@@ -6,7 +6,6 @@ use Illuminate\Http\RedirectResponse;
 use Webkul\Checkout\Facades\Cart;
 use Webkul\Sales\Repositories\InvoiceRepository;
 use Webkul\Sales\Repositories\OrderRepository;
-use Webkul\Sales\Models\Order;
 use Scalapay\Sdk\Api;
 use Scalapay\Sdk\Model\Api\Client;
 use Scalapay\Sdk\Model\Customer\Consumer;
@@ -178,8 +177,6 @@ class PaymentController extends Controller
             $this->validateOrder();
 
             $order = $this->orderRepository->create(Cart::prepareDataForOrder());
-
-            $this->orderRepository->update(['status' => Order::STATUS_COMPLETED], $order->id);
 
             if ($order->canInvoice()) {
                 $this->invoiceRepository->create($this->prepareInvoiceData($order));
